@@ -3,65 +3,101 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Especialista em Cutilagem</title>
+<title>Especialista em Cutilagem Profissional</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 body{
-font-family:Arial,Helvetica;
+font-family:Poppins;
 margin:0;
-background:#fafafa;
+background:#fff;
 color:#333;
+scroll-behavior:smooth;
 }
 
 header{
-background:linear-gradient(90deg,#ff4d94,#ff0066);
+background:linear-gradient(135deg,#ff2d75,#ff0066);
 color:#fff;
 text-align:center;
-padding:60px 20px;
+padding:90px 20px;
 }
 
-header h1{
-font-size:32px;
-margin-bottom:10px;
-}
+h1{font-size:40px;margin-bottom:10px}
 
 .container{
-max-width:900px;
+max-width:1100px;
 margin:auto;
-padding:30px 20px;
+padding:50px 20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
 }
 
 .card{
 background:#fff;
-padding:25px;
-margin-bottom:20px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.08);
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+transition:.3s;
 }
 
-h2{
-color:#ff0066;
+.card:hover{
+transform:translateY(-6px);
 }
 
-ul{
-line-height:1.8;
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card div{
+padding:20px;
 }
 
 .botao{
-display:block;
+display:inline-block;
 background:#ff0066;
 color:#fff;
-text-align:center;
-padding:18px;
-font-size:20px;
+padding:18px 35px;
 text-decoration:none;
-border-radius:8px;
+font-size:20px;
+border-radius:50px;
 margin-top:20px;
-font-weight:bold;
+font-weight:600;
+animation:pulse 1.5s infinite;
 }
 
-.botao:hover{
-background:#e6005c;
+@keyframes pulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.05)}
+100%{transform:scale(1)}
+}
+
+.depoimentos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.depoimento{
+background:#fff0f6;
+padding:20px;
+border-radius:12px;
+}
+
+.contador{
+background:#ffe3ec;
+text-align:center;
+padding:25px;
+font-size:22px;
+font-weight:600;
+color:#d60055;
 }
 
 .fixado{
@@ -77,66 +113,90 @@ padding:15px;
 .fixado a{
 color:#fff;
 font-weight:bold;
-text-decoration:none;
 font-size:18px;
+text-decoration:none;
 }
 
 footer{
 text-align:center;
+padding:40px;
 font-size:12px;
-color:#666;
-padding:30px;
+color:#777;
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Aprenda Cutilagem Profissional do Zero</h1>
-<p>Técnicas modernas para manicures iniciantes e profissionais aumentarem renda</p>
-<a class="botao" href="https://go.hotmart.com/X104321327I?ap=770a" target="_blank">
-VER TREINAMENTO COMPLETO
+<h1>Domine a Cutilagem Profissional</h1>
+<p>Aprenda técnicas modernas e aumente sua renda como manicure</p>
+<a class="botao" href="https://go.hotmart.com/X104321327I?ap=1c6a" target="_blank">
+QUERO ACESSAR O TREINAMENTO
 </a>
 </header>
 
+<div class="contador">
+🔥 Oferta especial disponível hoje
+</div>
+
 <div class="container">
 
+<h2>✨ O que você vai aprender</h2>
+
+<div class="grid">
+
 <div class="card">
-<h2>🔥 O que você vai aprender</h2>
-<ul>
-<li>Cutilagem fundinha sem machucar</li>
-<li>Esmaltação perfeita</li>
-<li>Preparação profissional das unhas</li>
-<li>Acabamentos modernos</li>
-<li>Técnicas usadas por manicures experientes</li>
-</ul>
+<img src="https://images.unsplash.com/photo-1604654894610-df63bc536371">
+<div>
+<h3>Cutilagem Fundinha</h3>
+<p>Técnicas modernas com acabamento profissional.</p>
+</div>
 </div>
 
 <div class="card">
-<h2>🎓 Benefícios do curso</h2>
-<ul>
-<li>Acesso imediato online</li>
-<li>Certificado incluso</li>
-<li>Acesso vitalício</li>
-<li>Garantia de 7 dias pela Hotmart</li>
-</ul>
-<a class="botao" href="https://go.hotmart.com/X104321327I?ap=770a" target="_blank">
-QUERO ME PROFISSIONALIZAR
+<img src="https://images.unsplash.com/photo-1588776814546-ec7eac57f4a3">
+<div>
+<h3>Esmaltação Perfeita</h3>
+<p>Durabilidade e acabamento impecável.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1607779097040-26e80aa78c52">
+<div>
+<h3>Decorações Modernas</h3>
+<p>Técnicas que valorizam o atendimento.</p>
+</div>
+</div>
+
+</div>
+
+<a class="botao" href="https://go.hotmart.com/X104321327I?ap=1c6a" target="_blank">
+GARANTIR MINHA VAGA
 </a>
+
 </div>
 
+<div class="container">
+<h2>⭐ Depoimentos</h2>
+
+<div class="depoimentos">
+<div class="depoimento">"Consegui melhorar muito meu atendimento!"</div>
+<div class="depoimento">"Técnicas fáceis e bem explicadas."</div>
+<div class="depoimento">"Hoje atendo muito mais clientes."</div>
+</div>
 </div>
 
 <div class="fixado">
-<a href="https://go.hotmart.com/X104321327I?ap=770a" target="_blank">
+<a href="https://go.hotmart.com/X104321327I?ap=1c6a" target="_blank">
 👉 ACESSAR O CURSO AGORA
 </a>
 </div>
 
 <footer>
-Aviso: Este site pode conter links de afiliado e podemos receber comissão
-caso você realize a compra através dos links indicados.
+Página independente de divulgação. Produto comercializado via Hotmart.
 </footer>
 
 </body>
