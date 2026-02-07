@@ -20,20 +20,10 @@ margin:auto;
 padding:20px;
 }
 
-.hero-video{
-background:#000;
-}
-
-.hero-video video{
+.hero img{
 width:100%;
-max-height:500px;
-object-fit:cover;
+border-radius:12px;
 display:block;
-}
-
-.hero-img img{
-width:100%;
-border-radius:10px;
 }
 
 .section{
@@ -51,9 +41,19 @@ gap:20px;
 .card{
 background:#fff;
 border-radius:14px;
-padding:25px;
-width:280px;
+overflow:hidden;
+width:300px;
 box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card div{
+padding:20px;
 }
 
 .btn{
@@ -71,6 +71,9 @@ margin-top:20px;
 .cta{
 background:#111;
 color:#fff;
+padding:60px 20px;
+text-align:center;
+border-radius:12px;
 }
 
 footer{
@@ -79,6 +82,7 @@ color:#fff;
 padding:25px;
 text-align:center;
 font-size:14px;
+margin-top:40px;
 }
 
 @media(max-width:768px){
@@ -93,45 +97,50 @@ align-items:center;
 
 <body>
 
-<section class="hero-video">
-<a href="https://go.hotmart.com/X104321327I?ap=1c6a">
-<video autoplay muted loop playsinline>
-<source src="banner-cutilagem.mp4" type="video/mp4">
-</video>
-</a>
-</section>
-
 <div class="container">
 
-<section class="hero-img">
+<!-- BANNER PROFISSIONAL HD -->
+<section class="hero">
 <a href="https://go.hotmart.com/X104321327I?ap=1c6a">
-<img src="banner-curso.gif">
+<img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1400&q=80" alt="Curso profissional manicure">
 </a>
 </section>
 
+<!-- BENEFICIOS -->
 <section class="section">
 <h2>O Que Você Vai Aprender</h2>
 
 <div class="cards">
+
 <div class="card">
+<img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80">
+<div>
 <h3>Cutilagem Profissional</h3>
-<p>Técnicas seguras e modernas utilizadas por profissionais.</p>
+<p>Técnicas seguras utilizadas por manicures profissionais.</p>
+</div>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80">
+<div>
 <h3>Esmaltação Perfeita</h3>
 <p>Acabamento impecável com maior durabilidade.</p>
 </div>
+</div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=800&q=80">
+<div>
 <h3>Decorações Modernas</h3>
-<p>Designs atuais que aumentam o valor do seu serviço.</p>
+<p>Designs atuais que valorizam o seu atendimento.</p>
 </div>
 </div>
 
+</div>
 </section>
 
-<section class="section cta">
+<!-- CTA -->
+<section class="cta">
 <h2>Curso Online Completo</h2>
 <p>+40 aulas práticas • Acesso imediato • Certificado incluído</p>
 
@@ -140,6 +149,7 @@ COMEÇAR AGORA
 </a>
 </section>
 
+<!-- FINAL -->
 <section class="section">
 <h2>Transforme Seu Atendimento</h2>
 <p>Aprenda no seu ritmo e aumente sua renda como manicure profissional.</p>
