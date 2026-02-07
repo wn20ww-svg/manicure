@@ -12,28 +12,38 @@
 body{
 margin:0;
 font-family:'Poppins',sans-serif;
-background:#fff0f6;
+background:#fff6f9;
 color:#333;
 }
 
-header{
-background:linear-gradient(135deg,#ff4d8d,#ff85a2);
+.hero{
+position:relative;
 color:white;
-padding:80px 20px;
 text-align:center;
+padding:120px 20px;
+background:url('https://images.unsplash.com/photo-1604654894610-df63bc536371') center/cover;
 }
 
-header img{
-max-width:350px;
-width:100%;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
-margin-top:20px;
+.hero::after{
+content:'';
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:rgba(255,60,120,0.7);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:900px;
+margin:auto;
 }
 
 h1{
-font-size:38px;
-margin-bottom:10px;
+font-size:42px;
+margin-bottom:20px;
 }
 
 .sub{
@@ -42,7 +52,7 @@ margin-bottom:20px;
 }
 
 .price{
-font-size:26px;
+font-size:28px;
 font-weight:700;
 margin:20px 0;
 }
@@ -51,10 +61,10 @@ margin:20px 0;
 background:white;
 color:#ff2f7a;
 padding:18px 35px;
-font-size:20px;
 border-radius:50px;
 text-decoration:none;
 font-weight:700;
+font-size:20px;
 display:inline-block;
 transition:0.3s;
 }
@@ -64,16 +74,16 @@ transform:scale(1.05);
 }
 
 section{
-padding:60px 20px;
 max-width:1100px;
 margin:auto;
+padding:70px 20px;
 }
 
 h2{
 text-align:center;
 font-size:32px;
-margin-bottom:40px;
 color:#ff2f7a;
+margin-bottom:40px;
 }
 
 .grid{
@@ -86,7 +96,7 @@ gap:25px;
 background:white;
 border-radius:20px;
 overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
+box-shadow:0 8px 25px rgba(0,0,0,0.1);
 }
 
 .card img{
@@ -99,8 +109,11 @@ object-fit:cover;
 padding:20px;
 }
 
-.center{
+.cta{
 text-align:center;
+background:#ffe3ec;
+padding:60px 20px;
+border-radius:25px;
 }
 
 footer{
@@ -115,26 +128,27 @@ padding:50px 20px;
 
 <body>
 
-<header>
+<div class="hero">
 
-<h1>Curso de Cutilagem para Manicures</h1>
+<div class="hero-content">
+
+<h1>Domine a Cutilagem Profissional e Aumente Sua Renda Como Manicure</h1>
 
 <p class="sub">
-Especialização com Faby Cardoso — técnicas profissionais
+Curso de Cutilagem com Faby Cardoso — especialização completa
 para iniciantes e manicures que querem aperfeiçoamento.
 </p>
 
-<div class="price">Apenas R$59,90 • Garantia de 7 dias</div>
+<div class="price">
+Apenas R$59,90 • Certificado incluso • Garantia de 7 dias
+</div>
 
 <a class="btn" href="https://go.hotmart.com/X104321327I?ap=1c6a" target="_blank">
 QUERO ME PROFISSIONALIZAR AGORA
 </a>
 
-<br><br>
-
-<img src="https://images.unsplash.com/photo-1604654894610-df63bc536371" alt="Manicure profissional">
-
-</header>
+</div>
+</div>
 
 <section>
 
@@ -162,7 +176,7 @@ QUERO ME PROFISSIONALIZAR AGORA
 <img src="https://images.unsplash.com/photo-1596704017254-975d8a7d78e1">
 <div>
 <h3>Decorações Modernas</h3>
-<p>Designs profissionais valorizados no mercado.</p>
+<p>Designs valorizados e profissionais.</p>
 </div>
 </div>
 
@@ -176,41 +190,27 @@ QUERO ME PROFISSIONALIZAR AGORA
 
 <div class="grid">
 
-<div class="card">
-<div>
-<p>✔ Iniciantes que desejam começar do zero</p>
-</div>
-</div>
-
-<div class="card">
-<div>
-<p>✔ Manicures com dificuldades técnicas</p>
-</div>
-</div>
-
-<div class="card">
-<div>
-<p>✔ Profissionais que querem se especializar</p>
-</div>
-</div>
+<div class="card"><div><p>✔ Iniciantes que desejam começar do zero</p></div></div>
+<div class="card"><div><p>✔ Manicures com dificuldades técnicas</p></div></div>
+<div class="card"><div><p>✔ Profissionais que querem aumentar renda</p></div></div>
 
 </div>
 
 </section>
 
-<section class="center">
+<section class="cta">
 
-<h2>Certificado + Garantia</h2>
+<h2>Certificado + Garantia Total</h2>
 
 <p>
-Certificado de conclusão incluso e garantia total de 7 dias.
-Se não gostar, pode pedir reembolso.
+Curso completo com certificado de conclusão e garantia de 7 dias.
+Se não gostar, pode pedir reembolso sem burocracia.
 </p>
 
 <br>
 
 <a class="btn" href="https://go.hotmart.com/X104321327I?ap=1c6a" target="_blank">
-GARANTIR MINHA VAGA
+GARANTIR MINHA VAGA AGORA
 </a>
 
 </section>
