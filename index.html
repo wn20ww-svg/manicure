@@ -10,27 +10,35 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:#fafafa;
+background:#f4f4f4;
 color:#333;
 }
 
-h1,h2,h3{
-margin-bottom:15px;
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
 }
 
-.section{
-padding:60px 20px;
-text-align:center;
+.hero-video{
+background:#000;
 }
 
 .hero-video video{
 width:100%;
+max-height:500px;
+object-fit:cover;
 display:block;
 }
 
 .hero-img img{
 width:100%;
-display:block;
+border-radius:10px;
+}
+
+.section{
+padding:60px 0;
+text-align:center;
 }
 
 .cards{
@@ -46,11 +54,6 @@ border-radius:14px;
 padding:25px;
 width:280px;
 box-shadow:0 4px 12px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
 }
 
 .btn{
@@ -90,7 +93,6 @@ align-items:center;
 
 <body>
 
-<!-- VIDEO TOPO -->
 <section class="hero-video">
 <a href="https://go.hotmart.com/X104321327I?ap=1c6a">
 <video autoplay muted loop playsinline>
@@ -99,19 +101,18 @@ align-items:center;
 </a>
 </section>
 
-<!-- BANNER -->
+<div class="container">
+
 <section class="hero-img">
 <a href="https://go.hotmart.com/X104321327I?ap=1c6a">
-<img src="banner-curso.gif" alt="Curso de Manicure com Certificado">
+<img src="banner-curso.gif">
 </a>
 </section>
 
-<!-- BENEFICIOS -->
 <section class="section">
 <h2>O Que Você Vai Aprender</h2>
 
 <div class="cards">
-
 <div class="card">
 <h3>Cutilagem Profissional</h3>
 <p>Técnicas seguras e modernas utilizadas por profissionais.</p>
@@ -126,11 +127,10 @@ align-items:center;
 <h3>Decorações Modernas</h3>
 <p>Designs atuais que aumentam o valor do seu serviço.</p>
 </div>
-
 </div>
+
 </section>
 
-<!-- VANTAGENS -->
 <section class="section cta">
 <h2>Curso Online Completo</h2>
 <p>+40 aulas práticas • Acesso imediato • Certificado incluído</p>
@@ -140,7 +140,6 @@ COMEÇAR AGORA
 </a>
 </section>
 
-<!-- CTA FINAL -->
 <section class="section">
 <h2>Transforme Seu Atendimento</h2>
 <p>Aprenda no seu ritmo e aumente sua renda como manicure profissional.</p>
@@ -149,6 +148,8 @@ COMEÇAR AGORA
 VER CURSO AGORA
 </a>
 </section>
+
+</div>
 
 <footer>
 <p>© Curso Profissional de Manicure</p>
